@@ -5,7 +5,7 @@
 [![Build Status](https://scrutinizer-ci.com/g/Exeu/apai-io/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Exeu/apai-io/build-status/master)
 [![Latest Stable Version](https://poser.pugx.org/exeu/apai-io/v/stable.svg)](https://packagist.org/packages/exeu/apai-io) [![Total Downloads](https://poser.pugx.org/exeu/apai-io/downloads.svg)](https://packagist.org/packages/exeu/apai-io)
 [![Build Status](https://travis-ci.org/Exeu/apai-io.png?branch=master)](https://travis-ci.org/Exeu/apai-io)
-[![Documentation Status](https://readthedocs.org/projects/apai-io/badge/?version=stable)](http://apai-io.readthedocs.io/en/stable/?badge=stable)
+
 
 ApaiIO is a highly flexible PHP library for fetching the Product Advertising API using REST or SOAP.
 You can either use the built in operations like ItemSearch or ItemLookup or you can implement your own operations which fits to your needs.
